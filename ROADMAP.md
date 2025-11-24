@@ -163,3 +163,14 @@ If I don’t write any new audit events for 30 days, this repo is just cosplay.
 
 **Last updated**: 2025-11  
 **Maintained by**: Hinata (`@Novara-developer`)
+
+## Founder Policy (v0.0001)
+
+- Until graduate school is complete, and until at least one serious external contributor
+  arrives **through Novara itself** (issues/PR/spec discussion),
+  Novara remains a **single-founder project**.
+- No equity, no "co-founder" title is given to real-life friends just because they are close.
+- After v1.0, contributors are evaluated only by:
+  - quality of criticism,
+  - quality of evidence,
+  - and alignment with the protocol, not personal history.
