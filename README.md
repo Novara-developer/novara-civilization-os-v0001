@@ -12,7 +12,12 @@ Novara is a small step toward that:
 - append-only `audit_events` ledger
 - self-contracts (rules that can block even myself)
 - hash-chained history on a cheap SQLite DB
+## Architecture & Rationale
 
+- Core design principles: [`context/design-principles.md`](context/design-principles.md)
+- Concept hierarchy: [`context/concept-hierarchy.md`](context/concept-hierarchy.md)
+- Terminology: [`context/terminology.md`](context/terminology.md)
+- Why SQLite (and not blockchain/Postgres): [`context/why-sqlite.md`](context/why-sqlite.md)
 ## Repo Structure
 
 - `schema.sql` – DB kernel (audit_events, self_contracts, triggers)
