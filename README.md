@@ -1,21 +1,22 @@
-# Novara Civilization OS Kernel (v0.0001)
+# Novara Civilization OS v0.0001
 
-This repo is the **kernel** of my Civilization OS experiment.
+Tiny prototype of a **Civilization OS**:
+an immutable local audit log for human + AI decisions.
 
-- Goal: make AI decisions verifiable and tamper-evident.
-- Core: an immutable audit log (`audit_events`) with hash chain.
-- Status: design-first, implemented later in Flask/SQLite.
+## Why
 
-This is not just an app.
-It is the v0.0001 blueprint of an **evidence-based civilization OS**.
+Money and media let a few actors control "truth".  
+My answer is: **control evidence and verification instead.**
 
-## Why This Exists
+Novara is a small step toward that:
+- append-only `audit_events` ledger
+- self-contracts (rules that can block even myself)
+- hash-chained history on a cheap SQLite DB
 
-I didn't just want another app.  
-I wanted a **civilization OS v0.0001**.
+## Repo Structure
 
-> Money and media let a few actors control "truth".
-> My answer is: **control evidence and verification instead.**
-
-Novara / this kernel is my prototype for a world where  
-AI decisions are **auditable, tamper-evident, and bigger than any one person**.
+- `schema.sql` – DB kernel (audit_events, self_contracts, triggers)
+- `app/` – Python code (audit append function, Flask glue later)
+- `docs/audit-design.md` – design memo of v0.0001
+- `failures.md` / `iterations.md` / `open-questions.md`
+  – meta logs (what failed / how it evolved / what’s still hard)
