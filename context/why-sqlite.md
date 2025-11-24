@@ -124,6 +124,7 @@ If the idea works, the storage layer is easy to upgrade.
 > Add stronger guarantees only when you've proven you need them.
 
 ---
-
+> I’m writing this now so that future-me, professors, and auditors
+> don’t have to guess why I started with SQLite.
 **Last updated**: 2025-11  
 **Author**: Hinata
